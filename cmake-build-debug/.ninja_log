@@ -1,0 +1,23 @@
+# ninja log v6
+1	3782	1728845282314920533	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	8bb7bffe37453991
+27	71	1728845282341590835	my_program	63a9f7b3ba069435
+3848	3864	1728845286162111514	lib/libgmock_main.a	91f06548457d5d24
+1545	1631	1728845600023605610	tests	6fac270f5614d9e3
+3823	3840	1728845286135441212	lib/libgtest_main.a	614f922d4c2534b1
+3782	3822	1728845286095435760	lib/libgtest.a	2fafc8c7200405d1
+1	960	1728845282314920533	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	97be97df662b9cb6
+2	150	1728845598478692794	CMakeFiles/tests.dir/test.cpp.o.ddi	757bf1e5b9731517
+152	1545	1728845598628521824	CMakeFiles/tests.dir/test.cpp.o	879f3d7c717777b7
+1	27	1728845282314920533	CMakeFiles/my_program.dir/main.cpp.o	913c97634caef51f
+1	3	1728845678363681757	CMakeFiles/tests.dir/test.cpp.o.modmap	a81b675ae4fee91f
+1	3	1728845678363681757	CMakeFiles/tests.dir/CXX.dd	a81b675ae4fee91f
+2	1194	1728845282314920533	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	9caa25881976bc8
+3822	3848	1728845286135441212	lib/libgmock.a	849afea7b64d09d9
+1	151	1728845721260776738	build.ninja	3161d9c2d901f1ae
+1	3	1728845678363681757	/home/maniel73/programming/C/bash/cmake-build-debug/CMakeFiles/tests.dir/CXXModules.json	a81b675ae4fee91f
+1	2040	1728845282314920533	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	fe6ec471ffd914ff
+1	5	1728845721797200377	CMakeFiles/tests.dir/CXX.dd	a81b675ae4fee91f
+1	5	1728845721797200377	/home/maniel73/programming/C/bash/cmake-build-debug/CMakeFiles/tests.dir/CXXModules.json	a81b675ae4fee91f
+1	5	1728845721797200377	CMakeFiles/tests.dir/test.cpp.o.modmap	a81b675ae4fee91f
+1	19	1728845729570451138	CMakeFiles/my_program.dir/main.c.o	5ab6fe42cf80d784
+19	40	1728845729590442596	my_program	e8d4abec6ea07bd6
