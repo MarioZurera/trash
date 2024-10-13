@@ -6,9 +6,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 cmake_minimum_required(VERSION 3.29)
-project(bash C CXX)
+project(trash C CXX)
 
-# Enable testing
 enable_testing()
 
 # Set C Standard
@@ -19,35 +18,26 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add GoogleTest directory (Assuming it's in the external/googletest folder)
-# add_subdirectory(googletest)
+set(CMAKE_C_FLAGS_DEBUG "-O0 -g3 -Wall -Wextra -Wpedantic -Werror")
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
 
-# Define source files and targets
-add_executable(my_program main.c)
+include_directories(include)
+add_executable(trash
+        src/main.c
+        src/lexer.c
+        src/readline.c
+        include/trash.h
+)
 
-# Add Google Test test target
-add_executable(tests test.cpp)
+add_executable(tests
+        src/readline.c
+        include/trash.h
+        tests/test.cpp
+        tests/readline_test.cpp
+)
 target_link_libraries(tests gtest gtest_main)
 
 # Add test to CTest
 add_test(NAME tests COMMAND tests)
-
-
-#[[
-
-
-
-add_executable(bash main.c)
-
-add_subdirectory(googletest)
-
-enable_testing()
-
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-add_executable(bash_tests test_sum.cpp)
-
-target_link_libraries(bash_tests gtest gtest_main)
-
-add_test(NAME mash_tests COMMAND mash_tests)]]

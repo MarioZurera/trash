@@ -1,0 +1,3 @@
+/home/maniel73/programming/C/trash/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/home/maniel73/programming/C/trash/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/home/maniel73/programming/C/trash/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
