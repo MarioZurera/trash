@@ -35,8 +35,8 @@ add_executable(trash
 add_executable(tests
         src/readline.c
         include/trash.h
-        tests/test.cpp
         tests/readline_test.cpp
+        tests/test.cpp
 )
 target_link_libraries(tests gtest gtest_main)
 
