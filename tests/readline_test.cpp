@@ -21,6 +21,15 @@ static void print_to_itself(const char *text) {
     close(out);
 }
 
+TEST(Readline, NotNull) {
+    const char *input = "\n";
+    print_to_itself(input);
+
+    char *line = readline("> ");
+    ASSERT_NE(line, nullptr);
+    free(line);
+}
+
 TEST(Readline, InputString) {
     const char *input = "This is a normal line\n";
     print_to_itself(input);
