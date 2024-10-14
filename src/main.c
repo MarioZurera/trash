@@ -1,8 +1,11 @@
 #include <stdio.h>
+
 #include "trash.h"
 
-int main(int argc, char **argv)
+int main(int argc [[maybe_unused]], char **argv [[maybe_unused]])
 {
-    printf("Hello, World!\n");
-    return 0;
+    char *line = readline("> ");
+    printf("%s", line);
+    free(line);
+    return EXIT_SUCCESS;
 }

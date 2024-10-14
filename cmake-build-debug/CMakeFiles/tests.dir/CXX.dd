@@ -1,5 +1,0 @@
-ninja_dyndep_version = 1.0
-build CMakeFiles/tests.dir/tests/test.cpp.o: dyndep
-
-build CMakeFiles/tests.dir/tests/readline_test.cpp.o: dyndep
-
